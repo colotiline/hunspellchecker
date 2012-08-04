@@ -19,9 +19,9 @@ using System.ComponentModel.Composition;
 using System.IO;
 using System.Windows.Controls;
 using Microsoft.VisualStudio.Text;
-using SpellChecker.Definitions;
+using Hunspellchecker.Definitions;
 
-namespace Microsoft.VisualStudio.Language.Spellchecker
+namespace Microsoft.VisualStudio.Language.Hunspellchecker
 {
     /// <summary>
     /// Spell checking provider based on WPF spell checker
@@ -153,7 +153,7 @@ namespace Microsoft.VisualStudio.Language.Spellchecker
 
         public GlobalDictionary()
         {
-            string localFolder = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), @"Microsoft\VisualStudio\10.0\SpellChecker");
+            string localFolder = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), @"Microsoft\VisualStudio\10.0\Hunspellchecker");
             if (!Directory.Exists(localFolder))
             {
                 Directory.CreateDirectory(localFolder);

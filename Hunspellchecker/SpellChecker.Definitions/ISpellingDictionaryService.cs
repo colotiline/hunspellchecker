@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using Microsoft.VisualStudio.Text;
 
-namespace SpellChecker.Definitions
+namespace Hunspellchecker.Definitions
 {
     /// <summary>
     /// Arguments for when a spelling dictionary has changed.

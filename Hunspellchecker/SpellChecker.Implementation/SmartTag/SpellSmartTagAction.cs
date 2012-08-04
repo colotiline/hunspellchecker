@@ -17,7 +17,7 @@ using System.Collections.ObjectModel;
 using Microsoft.VisualStudio.Language.Intellisense;
 using Microsoft.VisualStudio.Text;
 
-namespace Microsoft.VisualStudio.Language.Spellchecker
+namespace Microsoft.VisualStudio.Language.Hunspellchecker
 {
     /// <summary>
     /// Smart tag actions for spelling suggestions.

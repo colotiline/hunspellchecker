@@ -8,8 +8,8 @@
     <ProjectGuid>{34115C0C-E2B4-42D7-9B23-F613C042B416}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SpellChecker</RootNamespace>
-    <AssemblyName>SpellChecker</AssemblyName>
+    <RootNamespace>Hunspellchecker</RootNamespace>
+    <AssemblyName>Hunspellchecker</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <GeneratePkgDefFile>false</GeneratePkgDefFile>
@@ -60,8 +60,9 @@
     <Reference Include="Microsoft.VisualStudio.Text.UI.Wpf, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <Private>False</Private>
     </Reference>
-    <Reference Include="NHunspell">
-      <HintPath>..\..\..\..\Projects\hunspell\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1\bin\Debug\NHunspell.dll</HintPath>
+    <Reference Include="NHunspell, Version=0.9.6.0, Culture=neutral, PublicKeyToken=1ac793ea843b4366, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libs\NHunspell.dll</HintPath>
     </Reference>
     <Reference Include="System">
     </Reference>
@@ -114,6 +115,7 @@
     <Content Include="BindingPaths.pkgdef">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
+    <Content Include="Libs\NHunspell.dll" />
     <Content Include="ms-pl.txt">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
@@ -126,9 +128,9 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SpellChecker.Definitions\SpellChecker.Definitions.csproj">
+    <ProjectReference Include="..\SpellChecker.Definitions\Hunspellchecker.Definitions.csproj">
       <Project>{87D22AC6-424B-48DD-A5E8-DCB7CB3DDD63}</Project>
-      <Name>SpellChecker.Definitions</Name>
+      <Name>Hunspellchecker.Definitions</Name>
       <IncludeOutputGroupsInVSIX>BuiltProjectOutputGroup</IncludeOutputGroupsInVSIX>
     </ProjectReference>
   </ItemGroup>

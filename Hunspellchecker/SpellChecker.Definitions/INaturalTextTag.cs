@@ -1,6 +1,6 @@
 using Microsoft.VisualStudio.Text.Tagging;
 
-namespace SpellChecker.Definitions
+namespace Hunspellchecker.Definitions
 {
     /// <summary>
     /// Tags for Natural text regions.

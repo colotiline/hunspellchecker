@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using Microsoft.VisualStudio.Language.Spellchecker;
+using Microsoft.VisualStudio.Language.Hunspellchecker;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace SpellChecker.Test
+namespace Hunspellchecker.Test
 {
     [TestClass]
     public class WordLogicTests

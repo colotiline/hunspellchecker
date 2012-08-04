@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using Microsoft.VisualStudio.Text.Tagging;
 
-namespace SpellChecker.Definitions
+namespace Hunspellchecker.Definitions
 {
     public interface IMisspellingTag : ITag
     {

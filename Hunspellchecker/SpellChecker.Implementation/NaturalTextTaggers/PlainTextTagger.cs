@@ -21,9 +21,9 @@ using Microsoft.VisualStudio.Text;
 using Microsoft.VisualStudio.Text.Editor;
 using Microsoft.VisualStudio.Text.Tagging;
 using Microsoft.VisualStudio.Utilities;
-using SpellChecker.Definitions;
+using Hunspellchecker.Definitions;
 
-namespace Microsoft.VisualStudio.Language.Spellchecker
+namespace Microsoft.VisualStudio.Language.Hunspellchecker
 {
     /// <summary>
     /// Provides tags for text files.

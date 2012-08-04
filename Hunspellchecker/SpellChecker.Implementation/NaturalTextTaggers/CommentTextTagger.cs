@@ -24,7 +24,7 @@ using Microsoft.VisualStudio.Text.Tagging;
 using Microsoft.VisualStudio.Utilities;
 using System.Linq;
 
-namespace Microsoft.VisualStudio.Language.Spellchecker
+namespace Microsoft.VisualStudio.Language.Hunspellchecker
 {
     [Export(typeof(ITaggerProvider))]
     [ContentType("code")]

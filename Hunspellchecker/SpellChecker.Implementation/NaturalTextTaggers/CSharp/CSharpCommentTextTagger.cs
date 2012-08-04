@@ -5,7 +5,7 @@ using System.Linq;
 using Microsoft.VisualStudio.Text;
 using Microsoft.VisualStudio.Text.Tagging;
 
-namespace Microsoft.VisualStudio.Language.Spellchecker
+namespace Microsoft.VisualStudio.Language.Hunspellchecker
 {
     /// <summary>
     /// Due to issues with the built-in C# classifier, we write our own NaturalTextTagger that looks for 

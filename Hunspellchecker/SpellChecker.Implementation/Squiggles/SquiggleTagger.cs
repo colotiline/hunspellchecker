@@ -22,10 +22,10 @@ using Microsoft.VisualStudio.Text.Classification;
 using Microsoft.VisualStudio.Text.Editor;
 using Microsoft.VisualStudio.Text.Tagging;
 using Microsoft.VisualStudio.Utilities;
-using SpellChecker.Definitions;
+using Hunspellchecker.Definitions;
 using Microsoft.VisualStudio.Text.Adornments;
 
-namespace Microsoft.VisualStudio.Language.Spellchecker
+namespace Microsoft.VisualStudio.Language.Hunspellchecker
 {
     /// <summary>
     /// Squiggle tag for misspelled words.

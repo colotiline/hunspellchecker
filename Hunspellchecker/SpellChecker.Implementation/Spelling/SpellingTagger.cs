@@ -8,11 +8,11 @@ using System.Windows.Threading;
 using Microsoft.VisualStudio.Text;
 using Microsoft.VisualStudio.Text.Tagging;
 using Microsoft.VisualStudio.Utilities;
-using SpellChecker.Definitions;
+using Hunspellchecker.Definitions;
 using Microsoft.VisualStudio.Text.Editor;
-using SpellChecker.Spelling;
+using Hunspellchecker.Spelling;
 
-namespace Microsoft.VisualStudio.Language.Spellchecker
+namespace Microsoft.VisualStudio.Language.Hunspellchecker
 {
     [Export(typeof(IViewTaggerProvider))]
     [ContentType("any")]

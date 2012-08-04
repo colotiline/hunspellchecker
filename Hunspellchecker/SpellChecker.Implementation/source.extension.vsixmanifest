@@ -1,28 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Vsix xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="1.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2010">
-    <Identifier Id="SpellChecker">
-        <Name>Spell Checker</Name>
-        <Author>Roman Golovin, Michael Lehenbauer, Noah Richards</Author>
-        <Version>2.23</Version>
-        <Description xml:space="preserve">An editor extension that checks the spelling of comments, strings, and plaintext as you type.</Description>
-        <Locale>1049</Locale>
-        <MoreInfoUrl>http://blogs.msdn.com/noahric</MoreInfoUrl>
-        <License>ms-pl.txt</License>
-        <Icon>spell-icon.png</Icon>
-        <PreviewImage>spell-screenshot.png</PreviewImage>
-        <InstalledByMsi>false</InstalledByMsi>
-        <SupportedProducts>
-            <VisualStudio Version="10.0">
-                <Edition>Ultimate</Edition>
-                <Edition>Premium</Edition>
-                <Edition>Pro</Edition>
-            </VisualStudio>
-        </SupportedProducts>
-        <SupportedFrameworkRuntimeEdition MinVersion="4.0" MaxVersion="4.0" />
-        <SystemComponent>false</SystemComponent>
-    </Identifier>
-    <References />
-    <Content>
-        <MefComponent>SpellChecker.dll</MefComponent>
-    </Content>
+  <Identifier Id="Hunspellchecker">
+    <Name>Hunspellchecker</Name>
+    <Author>Rustam Shamsullin</Author>
+    <Version>1.00</Version>
+    <Description xml:space="preserve">Russian and English spell checker for Visual Studio. The source extension from Roman Golovin, Michael Lehenbauer, Noah Richards http://visualstudiogallery.msdn.microsoft.com/7c8341f1-ebac-40c8-92c2-476db8d523ce </Description>
+    <Locale>1049</Locale>
+    <MoreInfoUrl>https://code.google.com/p/hunspellchecker/</MoreInfoUrl>
+    <License>ms-pl.txt</License>
+    <Icon>spell-icon.png</Icon>
+    <PreviewImage>spell-screenshot.png</PreviewImage>
+    <InstalledByMsi>false</InstalledByMsi>
+    <SupportedProducts>
+      <VisualStudio Version="10.0">
+        <Edition>Ultimate</Edition>
+        <Edition>Premium</Edition>
+        <Edition>Pro</Edition>
+      </VisualStudio>
+    </SupportedProducts>
+    <SupportedFrameworkRuntimeEdition MinVersion="4.0" MaxVersion="4.0" />
+    <SystemComponent>false</SystemComponent>
+  </Identifier>
+  <References />
+  <Content>
+    <MefComponent>Hunspellchecker.dll</MefComponent>
+  </Content>
 </Vsix>

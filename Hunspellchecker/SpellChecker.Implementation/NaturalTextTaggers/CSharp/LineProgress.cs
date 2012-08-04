@@ -2,7 +2,7 @@
 using System.Diagnostics;
 using Microsoft.VisualStudio.Text;
 
-namespace Microsoft.VisualStudio.Language.Spellchecker
+namespace Microsoft.VisualStudio.Language.Hunspellchecker
 {
     class LineProgress
     {

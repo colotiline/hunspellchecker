@@ -1,4 +1,4 @@
-﻿namespace Microsoft.VisualStudio.Language.Spellchecker
+﻿namespace Microsoft.VisualStudio.Language.Hunspellchecker
 {
     enum State
     {

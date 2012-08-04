@@ -16,10 +16,10 @@
 using System.Collections.ObjectModel;
 using Microsoft.VisualStudio.Language.Intellisense;
 using Microsoft.VisualStudio.Text;
-using SpellChecker.Definitions;
+using Hunspellchecker.Definitions;
 using System.Diagnostics;
 
-namespace Microsoft.VisualStudio.Language.Spellchecker
+namespace Microsoft.VisualStudio.Language.Hunspellchecker
 {
     /// <summary>
     /// Smart tag action for adding new words to the dictionary.

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using NHunspell;
 
-namespace SpellChecker.Spelling
+namespace Hunspellchecker.Spelling
 {
     public class HunspellChecker
     {
