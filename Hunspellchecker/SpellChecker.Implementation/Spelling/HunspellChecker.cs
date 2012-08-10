@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
+using System.IO;
 using NHunspell;
+using System.Windows.Forms;
 
 namespace Hunspellchecker.Spelling
 {
@@ -13,8 +15,24 @@ namespace Hunspellchecker.Spelling
 
         static HunspellChecker()
         {
+            AddDllsIfNotExist();
             _russian = new Hunspell(Properties.Resources.ru_RU_aff, Properties.Resources.ru_RU_dic); 
             _english = new Hunspell(Properties.Resources.en_US_aff, Properties.Resources.en_US_dic); 
+        }
+
+        static void AddDllsIfNotExist()
+        {
+            var path = Path.Combine(Application.StartupPath, "Hunspellx86.dll");
+            if (!File.Exists(path))
+            {
+                File.WriteAllBytes(path, Properties.Resources.Hunspellx86);
+            }
+
+            path = Path.Combine(Application.StartupPath, "Hunspellx64.dll");
+            if (!File.Exists(path))
+            {
+                File.WriteAllBytes(path, Properties.Resources.Hunspellx64);
+            }
         }
 
         public bool CheckText(string text, out List<string> suggests)

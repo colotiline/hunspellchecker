@@ -115,6 +115,8 @@
     <Content Include="BindingPaths.pkgdef">
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
+    <Content Include="Libs\Hunspellx64.dll" />
+    <Content Include="Libs\Hunspellx86.dll" />
     <Content Include="Libs\NHunspell.dll" />
     <Content Include="ms-pl.txt">
       <IncludeInVSIX>true</IncludeInVSIX>
