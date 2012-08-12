@@ -19,16 +19,21 @@ namespace Hunspellchecker.Spelling
 
         public bool CheckText(string text, out List<string> suggests)
         {
+            suggests = null;
+
+            bool result;
             if (RussianAlphabet.Contains(text[0].ToString().ToLower()))
             {
-                suggests = _russian.Suggest(text);
-                return _russian.Spell(text);
+                result =  _russian.Spell(text);
+                if (!result) suggests = _russian.Suggest(text);
             }
             else
             {
-                suggests = _english.Suggest(text);
-                return _english.Spell(text);
+                result = _english.Spell(text);
+                if (!result) suggests = _english.Suggest(text);
             }
+
+            return result;
         }
     }
 }
