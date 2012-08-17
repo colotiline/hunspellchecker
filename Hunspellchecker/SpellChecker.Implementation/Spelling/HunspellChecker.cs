@@ -38,17 +38,18 @@ namespace Hunspellchecker.Spelling
         public bool CheckText(string text, out List<string> suggests)
         {
             suggests = null;
+            var trimmedText = text.Trim(new[] {'\''});
 
             bool result;
-            if (RussianAlphabet.Contains(text[0].ToString().ToLower()))
+            if (RussianAlphabet.Contains(trimmedText[0].ToString().ToLower()))
             {
-                result =  _russian.Spell(text);
-                if (!result) suggests = _russian.Suggest(text);
+                result = _russian.Spell(trimmedText);
+                if (!result) suggests = _russian.Suggest(trimmedText);
             }
             else
             {
-                result = _english.Spell(text);
-                if (!result) suggests = _english.Suggest(text);
+                result = _english.Spell(trimmedText);
+                if (!result) suggests = _english.Suggest(trimmedText);
             }
 
             return result;
